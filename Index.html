@@ -22,17 +22,18 @@
                 max-width: 300px;
             }
         </style>
-        <script src="http://code.jquery.com/jquery-3.1.0.min.js">
-        </script>
-        <script src="http://code.jquery.com/ui/1.12.0/jquery-ui.min.js">
-        </script>
-        <link rel="stylesheet"
-        href="http://code.jquery.com/ui/1.12.0/themes/base/jquery-ui.css">
-        <script type="text/javascript">
-        $(function() {
-        $("#accordion").accordion();
-        });
-        </script>
+<script src="http://code.jquery.com/jquery-3.1.0.min.js">
+</script>
+<script type="text/javascript">
+$(document).ready(function() {
+$("#verberg").click(function() {
+$("p").hide();
+});
+$("#toon").click(function() {
+$("p").show();
+});
+});
+</script>
         <title>Huiswerk les 25</title>
     </head>
     <body class="d-flex h-100 text-center">
@@ -44,29 +45,13 @@
             <div class="container-sm">
                 <h2>Welkom op mijn pagina!</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin bibendum faucibus dolor, at congue sapien tempus non. Curabitur sit amet tempus diam. Curabitur maximus tincidunt efficitur. Aliquam quis arcu nibh. Donec vulputate mauris elit, non efficitur arcu aliquam in. Proin ipsum tellus, rhoncus eleifend consequat nec, volutpat non turpis. In.</p>
-                <img src="3.JPG" alt="Foto Laura en Elite">
             </div>
-            <div id="accordion">
-                <h3>Over Laura</h3>
-                <div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </div>
-                <h3>Over Elite</h3>
-                <div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </div>
-                <h3>Dressuur rijden</h3>
-                <div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </div>
-                <h3>Springen</h3>
-                <div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </div>
-                </div>
-                <noscript>
-                Om deze website optimaal te gebruiken is het noodzakelijk om JavaScript te activeren.
-                </noscript>
+            <button id="verberg">Verberg foto</button>
+            <button id="toon">Toon foto</button>
+            <img src="3.JPG" alt="Foto Laura en Elite">
+            <noscript>
+            Om deze website optimaal te gebruiken is het noodzakelijk om JavaScript te activeren.
+            </noscript>
         </main>
         <footer class="mt-auto">Copyright by Laura</footer>
     </div>
